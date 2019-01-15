@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="BitCoin Presentation" Height="600" Width="800" Background="Black">
     <Grid>
-        <Image Source="/img/Bitcoin-logo-300x296.png"  x:Name="bitLogo" Height="100" VerticalAlignment="Center" Width="100" Margin="345,100,345,150" MouseLeftButtonDown="BitLogo_MouseLeftButtonDown"/>
-        <Label Name="lblImage" Foreground="White" Content="Kliknij obrazek powyżej, by przejść dalej." HorizontalAlignment="Center" Margin="252,331,247,204" FontFamily="Lucida Sans" FontSize="14" Width="293"></Label>
+
+        <Button Name="btnImg" Width="150" Height="120" Background="Black" BorderBrush="Black">
+            <Image Source="/img/flesh.jpg"></Image>
+        </Button>
+        <Label Name="lblImage" Foreground="White" Content="Kliknij obrazek powyżej, by przejść dalej." HorizontalAlignment="Center" Margin="252,350,247,185" FontFamily="Lucida Sans" FontSize="14" Width="293"></Label>
     </Grid>
 </Window>
