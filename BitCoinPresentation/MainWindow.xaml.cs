@@ -23,6 +23,8 @@ namespace BitCoin_Presentation
         public MainWindow()
         {
             InitializeComponent();
+            var uri = new Uri("pack://application:,,,/Resources/bitlogo.png");
+            bitImg.Source = new BitmapImage(uri);
         }
 
         private void BitLogo_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

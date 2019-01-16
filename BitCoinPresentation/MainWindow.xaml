@@ -6,10 +6,14 @@
         xmlns:local="clr-namespace:BitCoin_Presentation"
         mc:Ignorable="d"
         Title="BitCoin Presentation" Height="600" Width="800" Background="Black">
+    <Window.Resources>
+        <BitmapImage x:Key="MyImageSource" UriSource="./Resources/bitlogo.png" />
+    </Window.Resources>
+    
     <Grid>
-
+        
         <Button Name="btnImg" Width="150" Height="120" Background="Black" BorderBrush="Black">
-            <Image Source="/img/flesh.jpg"></Image>
+            <Image Name="bitImg"></Image>
         </Button>
         <Label Name="lblImage" Foreground="White" Content="Kliknij obrazek powyżej, by przejść dalej." HorizontalAlignment="Center" Margin="252,350,247,185" FontFamily="Lucida Sans" FontSize="14" Width="293"></Label>
     </Grid>
