@@ -23,7 +23,7 @@ namespace BitCoin_Presentation
         public MainWindow()
         {
             InitializeComponent();
-            var uri = new Uri("pack://application:,,,/Resources/bitlogo.png");
+            Uri uri = new Uri("pack://application:,,,/Resources/bitlogo.png");
             bitImg.Source = new BitmapImage(uri);
         }
 
