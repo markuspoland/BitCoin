@@ -1,0 +1,14 @@
+﻿<Window x:Class="BitCoin_Presentation.Prezentacja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BitCoin_Presentation"
+        mc:Ignorable="d"
+        Title="BitCoin Presentation" Height="1280" Width="1024" Background="Black">
+    <Grid>
+        <StackPanel Width="1000" Height="50" VerticalAlignment="Top">
+            
+        </StackPanel>
+    </Grid>
+</Window>
