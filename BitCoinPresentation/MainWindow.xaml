@@ -9,12 +9,16 @@
     <Window.Resources>
         <BitmapImage x:Key="MyImageSource" UriSource="./Resources/bitlogo.png" />
     </Window.Resources>
-    
+
     <Grid>
-        
-        <Button Name="btnImg" Width="150" Height="120" Background="Black" BorderBrush="Black">
-            <Image Name="bitImg"></Image>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="355*"/>
+            <ColumnDefinition Width="437*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Name="btnImg" Width="150" Height="120" Background="Black" BorderBrush="Black" Grid.ColumnSpan="2" Margin="321,224,321,225">
+            <Image Name="bitImg" Source="pack://application:,,,/Resources/bitlogo.png"></Image>
         </Button>
-        <Label Name="lblImage" Foreground="White" Content="Kliknij obrazek powyżej, by przejść dalej." HorizontalAlignment="Center" Margin="252,350,247,185" FontFamily="Lucida Sans" FontSize="14" Width="293"></Label>
+        <Label Name="lblImage" Foreground="White" Content="Kliknij obrazek powyżej, aby zacząć." HorizontalAlignment="Center" Margin="252,350,247,185" FontFamily="Lucida Sans" FontSize="14" Width="293" Grid.ColumnSpan="2"></Label>
     </Grid>
 </Window>
