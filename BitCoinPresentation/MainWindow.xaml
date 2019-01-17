@@ -5,20 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BitCoin_Presentation"
         mc:Ignorable="d"
+        Name="startupWindow"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
         Title="BitCoin Presentation" Height="600" Width="800" Background="Black">
     <Window.Resources>
         <BitmapImage x:Key="MyImageSource" UriSource="./Resources/bitlogo.png" />
     </Window.Resources>
 
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="355*"/>
-            <ColumnDefinition Width="437*"/>
-        </Grid.ColumnDefinitions>
+        
 
-        <Button Name="btnImg" Width="150" Height="120" Background="Black" BorderBrush="Black" Grid.ColumnSpan="2" Margin="321,224,321,225">
-            <Image Name="bitImg" Source="pack://application:,,,/Resources/bitlogo.png"></Image>
+        <Button Name="btnImg" Width="150" Height="120" Background="Black" BorderBrush="Black" Margin="306,202,336,247" Click="BtnImg_Click">
+            <Image Name="bitImg" Height="100" Source="pack://application:,,,/Resources/bitlogo.png"></Image>
         </Button>
         <Label Name="lblImage" Foreground="White" Content="Kliknij obrazek powyżej, aby zacząć." HorizontalAlignment="Center" Margin="252,350,247,185" FontFamily="Lucida Sans" FontSize="14" Width="293" Grid.ColumnSpan="2"></Label>
+        <StackPanel VerticalAlignment="Bottom" Height="50">
+            <Label Content="©2019 Marek Kula" Foreground="White" HorizontalAlignment="Right" Margin="0,10,20,0">
+                
+            </Label>
+        </StackPanel>
     </Grid>
 </Window>

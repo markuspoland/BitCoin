@@ -5,9 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BitCoin_Presentation"
         mc:Ignorable="d"
-        Title="BitCoin Presentation" Height="1280" Width="1024" Background="Black">
+        Name="presentation"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Closing="Presentation_Closing"
+        Title="BitCoin Presentation" Height="1024" Width="1280" Background="Black">
     <Grid>
-        <StackPanel Width="1000" Height="50" VerticalAlignment="Top">
+        <StackPanel Width="auto" Height="50" VerticalAlignment="Top">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*" />
+                    <ColumnDefinition Width="20*" />
+                    <ColumnDefinition Width="20*" />
+                    <ColumnDefinition Width="20*" />
+                    <ColumnDefinition Width="20*" />
+                    <ColumnDefinition Width="20*" />
+                </Grid.ColumnDefinitions>
+                <Button Margin="2" Content="Bitcoin. Jak to działa?"></Button>
+                <Button Grid.Column="1" Margin="2" Content="Blockchain"></Button>
+                <Button Grid.Column="2" Margin="2" Content="Proof-of-work"></Button>
+                <Button Grid.Column="3" Margin="2" Content="Sieć Bitcoin"></Button>
+                <Button Grid.Column="4" Margin="2" Content="Algorytmy"></Button>
+                <Button Grid.Column="5" Margin="2" Content="Kryptografia"></Button>
+            </Grid>
+        </StackPanel>
+        <StackPanel Width="auto" Height="1000" Margin="2, 55">
+            
+                <TextBlock Name="txtBlk" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Disabled"  Width="auto" Height="800" Margin="2" Background="Black"></TextBlock>
             
         </StackPanel>
     </Grid>

@@ -25,9 +25,11 @@ namespace BitCoin_Presentation
             InitializeComponent();
         }
 
-        private void BitLogo_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void BtnImg_Click(object sender, RoutedEventArgs e)
         {
-
+            (App.Current.MainWindow as MainWindow).Hide();
+            Prezentacja prezentacja = new Prezentacja();
+            prezentacja.Show();
         }
     }
 }

@@ -22,6 +22,13 @@ namespace BitCoin_Presentation
         public Prezentacja()
         {
             InitializeComponent();
+
+            
+        }
+
+        private void Presentation_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            App.Current.MainWindow.Close();
         }
     }
 }
